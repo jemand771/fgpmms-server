@@ -25,13 +25,12 @@ import things.User;
 
 public class MAIN {
 
-//	static String dbip = "192.168.178.7";
-	static String dbip = "127.0.0.1";
-	static String dbport = "3306";
-	static String dbname = "bell";
-	static String url = "jdbc:mysql://" + dbip + ":" + dbport + "/" + dbname;
-	static String username = "user";
-	static String password = "pass";
+	static String dbip = "";
+	static String dbport = "";
+	static String dbname = "";
+	static String url = "";
+	static String username = "";
+	static String password = "";
 	static boolean acceptingConnections = true;
 
 	public static void main(String args[]) throws SQLException, IOException {
@@ -42,7 +41,10 @@ public class MAIN {
 
 		username = prop.getProperty("user");
 		password = prop.getProperty("pass");
-		
+		dbip = prop.getProperty("dbip");
+		dbport = prop.getProperty("dbport");
+		dbname = prop.getProperty("dbname");
+		url = "jdbc:mysql://" + dbip + ":" + dbport + "/" + dbname;
 		
 		System.out.print("Connecting database...");
 		Connection connection;
