@@ -1,0 +1,9 @@
+images/
+.settings/
+.git/
+BELL.server.iml
+config.properties
+.project
+.classpath
+countLines.jar
+glowboard.PNG
