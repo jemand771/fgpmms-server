@@ -30,8 +30,8 @@ public class MAIN {
 	static String dbport = "3306";
 	static String dbname = "bell";
 	static String url = "jdbc:mysql://" + dbip + ":" + dbport + "/" + dbname;
-	static String username = "java";
-	static String password = "password";
+	static String username = "user";
+	static String password = "pass";
 	static boolean acceptingConnections = true;
 
 	public static void main(String args[]) throws SQLException, IOException {
