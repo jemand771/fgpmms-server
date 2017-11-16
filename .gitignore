@@ -7,3 +7,4 @@ config.properties
 .classpath
 countLines.jar
 glowboard.PNG
+bin/
