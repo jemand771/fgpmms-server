@@ -3,13 +3,13 @@ package things.register;
 import java.util.HashMap;
 
 import things.Group;
-import things.MarkEvent;
 import things.SQLHandler;
 
+@SuppressWarnings("unused")
 public class MarkEventRegistrator {
 
 	private SQLHandler handler;
-	
+
 	private Group group;
 	private boolean isExam, customMarks;
 	private int weight;

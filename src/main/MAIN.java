@@ -2,24 +2,17 @@ package main;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Properties;
 import java.util.Timer;
 import java.util.UUID;
-import java.util.logging.Handler;
 
 import deamons.TokenCleaner;
-import things.Group;
-import things.MarkEvent;
 import things.SQLHandler;
 import things.User;
 
@@ -119,11 +112,11 @@ public class MAIN {
 		
 		UUID me_uuid = UUID.fromString("3e98161f-0ffa-4d90-8ad7-addc4f807bc2");
 		UUID lukas_uuid = UUID.fromString("5f044e6d-9342-47e5-9abf-14d8aa74260e");
-		UUID andrada_uuid = UUID.fromString("4a05c3a3-df68-44a8-8670-4878ce6bf4cb");
 		
+		@SuppressWarnings("unused")
 		User me = new User(handler, me_uuid);
+		@SuppressWarnings("unused")
 		User lukas = new User(handler, lukas_uuid);
-		User andrada = new User(handler, andrada_uuid);
 		
 		
 		
@@ -139,11 +132,6 @@ public class MAIN {
 		eventRegisterMap.put("desc_teacher", "ich hasse euch");
 		eventRegisterMap.put("desc_student", "hallo");
 		
-//		MarkEvent ev = new MarkEvent(handler, MarkEvent.register(handler, eventRegisterMap));
-		
-		andrada.deleteAllTokens();
-		
-		andrada.getToken();
 		
 		System.out.println("Exiting.");
 		System.exit(0);

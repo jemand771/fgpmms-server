@@ -2,7 +2,6 @@ package things;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.sql.ResultSet;
@@ -75,6 +74,7 @@ public class Image {
 		FileInputStream imageInFile = new FileInputStream(file);
 		byte imageData[] = new byte[(int) file.length()];
 		imageInFile.read(imageData);
+		imageInFile.close();
 
 		String imageDataString = Base64.getEncoder().encodeToString(imageData);
 		return imageDataString;

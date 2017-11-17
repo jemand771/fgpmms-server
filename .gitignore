@@ -7,3 +7,6 @@ config.properties
 .classpath
 countLines.jar
 glowboard.PNG
+build.xml
+src/tools/external/testing
+bin/tools/external/testing

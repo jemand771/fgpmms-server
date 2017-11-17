@@ -3,14 +3,11 @@ package things;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import main.SettingsManager;
-
 public class Mark {
 
 	private User user;
 	private SQLHandler handler;
 	private MarkEvent event;
-	private int weightCode;
 	
 	public Mark(User user, MarkEvent event, SQLHandler handler){
 		this.user = user;

@@ -15,6 +15,7 @@ public class TotalLineCounter {
 		
 		long start = System.currentTimeMillis();
 		processFolder(thisFolder);
+		@SuppressWarnings("unused")
 		long time = System.currentTimeMillis() - start;
 		System.out.println(lines);
 	}
@@ -35,6 +36,7 @@ public class TotalLineCounter {
 					sc.nextLine();
 					lines++;
 				}
+				sc.close();
 			}
 		}
 	}

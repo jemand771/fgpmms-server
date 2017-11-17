@@ -18,10 +18,10 @@ public class User {
 	}
 	
 	
-	public ArrayList<Mark> getAllMarksIn(Group group){
+	public ArrayList<Mark> getAllMarksIn(Group group) throws SQLException{
 		
 		ArrayList<Mark> list = new ArrayList<>();
-		String sql = "SELECT marks.id, markevents.name, marks.percentage, marks.user" + 
+		String sql = "SELECT marks.id, markevents.name, marks.percentage, marks.user, markevents.id" + 
 		" FROM markevents, marks WHERE marks.event = markevents.id"
 		+ " AND marks.user = "
 		+ quote(UUID())
@@ -29,6 +29,14 @@ public class User {
 		+ group.getID()
 		+ ";";
 		
+		ResultSet set = handler.executeQuerry(sql);
+		while(set.next()) {
+			User user = new User(handler, this.user);
+			MarkEvent event = new MarkEvent(handler, set.getInt("markevents.id"));
+			Mark mark = new Mark(user, event, handler);
+			list.add(mark);
+		}
+		//TODO test
 		return list;
 	}
 	
