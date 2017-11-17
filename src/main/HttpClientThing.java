@@ -81,7 +81,7 @@ public class HttpClientThing extends Thread {
 				e.printStackTrace();
 				System.out.println("Bad request");
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
+				// should not happen
 				e.printStackTrace();
 			}
 		}

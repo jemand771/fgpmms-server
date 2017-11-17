@@ -36,7 +36,6 @@ public class User {
 			Mark mark = new Mark(user, event, handler);
 			list.add(mark);
 		}
-		//TODO test
 		return list;
 	}
 	

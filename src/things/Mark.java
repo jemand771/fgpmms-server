@@ -51,8 +51,4 @@ public class Mark {
 		}
 		handler.execute(sql);
 	}
-	
-	public void setByPoints(double points){
-		//TODO linked calculation to MarkEvent with maxPoints
-	}
 }

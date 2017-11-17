@@ -44,7 +44,6 @@ public class Actions {
 			out.flush();
 		}
 		
-		//TODO password check
 		User user = new User(handler, uid);
 		if(!user.validatePassword(password)){
 			

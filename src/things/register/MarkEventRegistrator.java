@@ -72,6 +72,4 @@ public class MarkEventRegistrator {
 		// register event
 		HashMap<String, String> values = new HashMap<>();
 	}
-	//TODO more methods
-	//TODO how to get auto-assignes id once registered
 }
