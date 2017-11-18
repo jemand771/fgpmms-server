@@ -12,7 +12,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-import Actions.Actions;
+import actions.Actions;
 import things.SQLHandler;
 import things.Token;
 import things.User;
