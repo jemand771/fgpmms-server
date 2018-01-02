@@ -55,7 +55,7 @@ public class HttpClientThing extends Thread {
 					JSONObject mainobj = (JSONObject) parser.parse(line);
 					String action = (String) mainobj.get("action");
 
-					if (action == "login") {
+					if (action.equalsIgnoreCase("login")) {
 						actions.login(mainobj);
 					} else {
 						String tokenString = (String) mainobj.get("token");

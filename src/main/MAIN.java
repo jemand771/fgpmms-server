@@ -115,25 +115,9 @@ public class MAIN {
 		
 		@SuppressWarnings("unused")
 		User me = new User(handler, me_uuid);
-		@SuppressWarnings("unused")
-		User lukas = new User(handler, lukas_uuid);
 		
 		
-		
-		HashMap<String , String> eventRegisterMap = new HashMap<>();
-		eventRegisterMap.put("group_id", "1");
-		eventRegisterMap.put("name", "name");
-		eventRegisterMap.put("is_exam", "1");
-		eventRegisterMap.put("custom", "0");
-		eventRegisterMap.put("weight", "100");
-		eventRegisterMap.put("date", "1234567");
-		eventRegisterMap.put("announced", "123456");
-		eventRegisterMap.put("editable", "12345678");
-		eventRegisterMap.put("desc_teacher", "ich hasse euch");
-		eventRegisterMap.put("desc_student", "hallo");
-		
-		
-		System.out.println("Exiting.");
-		System.exit(0);
+//		System.out.println("Exiting.");
+//		System.exit(0);
 	}
 }

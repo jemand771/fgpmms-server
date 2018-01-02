@@ -14,3 +14,6 @@ build/build_server.xml
 build/build_counter.xml
 build/jar-in-jar-loader.zip
 build/
+build.gradle
+.gradle/
+bin/
