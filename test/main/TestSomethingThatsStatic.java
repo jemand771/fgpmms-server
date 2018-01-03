@@ -10,6 +10,6 @@ public class TestSomethingThatsStatic {
 	@Test
 	public void testSomething() {
 		
-		assertTrue(true);
+		assertTrue(false);
 	}
 }
