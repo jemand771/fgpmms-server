@@ -22,6 +22,13 @@ sourceSets {
    }
 }
 
+test {
+    testLogging {
+        events "passed", "skipped", "failed"
+        exceptionFormat "full"
+    }
+}
+
 jar {
     from {
         (configurations.runtime).collect {
